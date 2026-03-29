@@ -4,21 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Infinity School - Curso Completo</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-    body { font-family: 'Inter', system-ui, sans-serif; }
-    .nav-active { border-bottom: 4px solid #e63939; color: #e63939; }
-    .slide-bg { background: linear-gradient(135deg, #1a1a1a 0%, #111 100%); }
-    .prose h3 { color: #e63939; }
+    :root {
+      --red: #e63939;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { 
+      font-family: 'Inter', system-ui, sans-serif; 
+      background:#111; 
+      color:#fff; 
+      line-height:1.6;
+    }
+    .nav-active { 
+      border-bottom: 4px solid var(--red); 
+      color: var(--red); 
+    }
+    .prose h3 { color: var(--red); }
+    .max-w-7xl { max-width: 1280px; margin-left:auto; margin-right:auto; }
+    .px-8 { padding-left:2rem; padding-right:2rem; }
+    .py-5 { padding-top:1.25rem; padding-bottom:1.25rem; }
+    .py-10 { padding-top:2.5rem; padding-bottom:2.5rem; }
+    .text-center { text-align:center; }
+    .inline-block { display:inline-block; }
+    .bg-red-500 { background:#e63939; }
+    .text-white { color:#fff; }
+    .text-sm { font-size:0.875rem; }
+    .font-bold { font-weight:700; }
+    .rounded-full { border-radius:9999px; }
+    .mb-4 { margin-bottom:1rem; }
+    .text-5xl { font-size:3rem; }
+    .text-3xl { font-size:1.875rem; }
+    .text-lg { font-size:1.125rem; }
+    .leading-relaxed { line-height:1.625; }
+    .mt-12 { margin-top:3rem; }
+    .mb-6 { margin-bottom:1.5rem; }
+    .bg-\\[\\#1a1a1a\\] { background:#1a1a1a; }
+    .p-6 { padding:1.5rem; }
+    .rounded-2xl { border-radius:1rem; }
+    .grid { display:grid; }
+    .grid-cols-3 { grid-template-columns:repeat(3,1fr); }
+    .gap-4 { gap:1rem; }
+    .gap-6 { gap:1.5rem; }
+    .hidden { display:none; }
+    .flex { display:flex; }
+    .items-center { align-items:center; }
+    .justify-between { justify-content:space-between; }
+    .gap-3 { gap:0.75rem; }
+    .gap-8 { gap:2rem; }
+    .text-2xl { font-size:1.5rem; }
+    .text-xs { font-size:0.75rem; }
+    .text-gray-400 { color:#9ca3af; }
+    ul { list-style:none; }
+    .prose p { margin-bottom:1rem; }
+    .prose strong { font-weight:600; }
   </style>
 </head>
-<body class="bg-[#111] text-white">
+<body>
 
   <!-- NAVBAR -->
   <nav class="bg-black border-b border-red-500 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
+    <div class="max-w-7xl px-8 py-5 flex items-center justify-between">
       <div class="flex items-center gap-3">
         <div class="w-12 h-12 bg-red-500 flex items-center justify-center text-white font-bold text-3xl rounded">IN</div>
         <div>
@@ -47,7 +94,7 @@
   </nav>
 
   <!-- PAGE CONTAINER -->
-  <div class="max-w-7xl mx-auto px-8 py-10">
+  <div class="max-w-7xl px-8 py-10">
 
     <!-- AULA 01 -->
     <div id="page1" class="page">
@@ -55,65 +102,65 @@
         <div class="inline-block bg-red-500 text-white text-sm font-bold px-6 py-2 rounded-full mb-4">AULA 01</div>
         <h2 class="text-5xl font-bold">Descobrindo e Definindo sua Marca Pessoal</h2>
       </div>
-      <div class="prose prose-invert max-w-none text-lg leading-relaxed">
-        <h3 class="text-3xl font-semibold mb-6">Explorando sua Identidade</h3>
+      <div class="prose max-w-none text-lg leading-relaxed">
+        <h3 class="text-3xl font-semibold mb-6">🔍 Explorando sua Identidade</h3>
         <p>O Personal Branding começa com um profundo conhecimento sobre quem você é e o que deseja comunicar ao mundo.</p>
         <p>Antes de construir uma marca forte, é essencial explorar sua identidade, entender seus valores, paixões, habilidades e o impacto que deseja causar.</p>
         <p>Essa etapa ajuda a alinhar sua imagem pessoal com seus objetivos profissionais e a criar uma presença autêntica e coerente.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Autoconhecimento e Autenticidade</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">🧠 Autoconhecimento e Autenticidade</h3>
         <p>O autoconhecimento é o primeiro passo para qualquer estratégia de Personal Branding. Quando você sabe quem você é, suas crenças, valores e paixões, fica muito mais fácil se conectar com seu público de forma verdadeira.</p>
         <p>Para isso podemos utilizar os arquétipos. Eles são modelos universais criados por Carl Jung e determinam alguns padrões de comportamento e, ao compreender qual arquétipo mais se alinha à sua personalidade, você consegue expressar de maneira mais clara sua autenticidade e os valores que deseja transmitir.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Arquétipos</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">🦸 Arquétipos</h3>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div class="bg-[#1a1a1a] p-6 rounded-2xl"><strong>O Sábio</strong> – Valorizando o conhecimento e a busca pela verdade.</div>
-          <div class="bg-[#1a1a1a] p-6 rounded-2xl"><strong>O Herói</strong> – Aqueles que superam desafios e inspiram superação.</div>
-          <div class="bg-[#1a1a1a] p-6 rounded-2xl"><strong>O Explorador</strong> – Focado na liberdade, aventura e experiências.</div>
-          <div class="bg-[#1a1a1a] p-6 rounded-2xl"><strong>O Criador</strong> – Pessoas que buscam inovação e originalidade.</div>
-          <div class="bg-[#1a1a1a] p-6 rounded-2xl"><strong>O Mago</strong> – Busca trazer novos entendimentos e soluções inovadoras.</div>
-          <div class="bg-[#1a1a1a] p-6 rounded-2xl"><strong>O Amante</strong> – Busca harmonia e celebra a vida com prazer e estilo.</div>
-          <div class="bg-[#1a1a1a] p-6 rounded-2xl"><strong>O Cuidador</strong> – Sempre disposto a ajudar e apoiar aqueles que precisam.</div>
+          <div class="bg-[#1a1a1a] p-6 rounded-2xl"><strong>🧙 O Sábio</strong> – Valorizando o conhecimento e a busca pela verdade.</div>
+          <div class="bg-[#1a1a1a] p-6 rounded-2xl"><strong>🦸 O Herói</strong> – Aqueles que superam desafios e inspiram superação.</div>
+          <div class="bg-[#1a1a1a] p-6 rounded-2xl"><strong>🧭 O Explorador</strong> – Focado na liberdade, aventura e experiências.</div>
+          <div class="bg-[#1a1a1a] p-6 rounded-2xl"><strong>🎨 O Criador</strong> – Pessoas que buscam inovação e originalidade.</div>
+          <div class="bg-[#1a1a1a] p-6 rounded-2xl"><strong>✨ O Mago</strong> – Busca trazer novos entendimentos e soluções inovadoras.</div>
+          <div class="bg-[#1a1a1a] p-6 rounded-2xl"><strong>❤️ O Amante</strong> – Busca harmonia e celebra a vida com prazer e estilo.</div>
+          <div class="bg-[#1a1a1a] p-6 rounded-2xl"><strong>🤝 O Cuidador</strong> – Sempre disposto a ajudar e apoiar aqueles que precisam.</div>
         </div>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Pontos fortes e diferenciais</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">💪 Pontos fortes e diferenciais</h3>
         <p>Compreender seus pontos fortes e diferenciais é fundamental para um Personal Branding eficaz. O Golden Circle, desenvolvido por Simon Sinek, é uma excelente ferramenta para isso. Ele se baseia em três perguntas chave:</p>
-        <h3 class="text-3xl font-semibold mt-8 mb-6">Golden Circle</h3>
+        <h3 class="text-3xl font-semibold mt-8 mb-6">🎯 Golden Circle</h3>
         <p><strong>Por que? (Why)</strong> – Qual o propósito que você busca com seu trabalho, sua marca ou sua presença? O "porquê" é a razão de existir, o verdadeiro propósito que te motiva a fazer o que você faz.</p>
         <p><strong>Como? (How)</strong> – Quais são os métodos, processos ou abordagens que você usa para alcançar seus objetivos? Aqui, você pode destacar suas habilidades e seus diferenciais únicos.</p>
         <p><strong>O quê? (What)</strong> – O que você entrega concretamente ao seu público? São seus produtos, serviços ou conteúdo.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Imagem percebida vs Imagem desejada</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">👁️ Imagem percebida vs Imagem desejada</h3>
         <p>A imagem percebida é como o público vê você hoje, enquanto a imagem desejada é como você gostaria que fosse percebido. Aqui, o feedback é uma ferramenta essencial para entender a discrepância entre essas duas imagens.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Feedback</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">📬 Feedback</h3>
         <p>Feedbacks podem vir de diversas fontes, como amigos, colegas de trabalho, mentores ou até seu público nas redes sociais. Depois de compreender essas diferenças, você pode começar a ajustar sua comunicação, ações e imagem para alinhar a percepção das pessoas com a imagem que você deseja construir.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Storytelling Pessoal</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">📖 Storytelling Pessoal</h3>
         <p>O storytelling é uma das ferramentas mais poderosas para fortalecer o Personal Branding. Contar sua própria história, com sinceridade e autenticidade, pode criar uma conexão emocional profunda com seu público. Utilizar estruturas narrativas como a Jornada do Herói pode ser um grande diferencial.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Jornada do Herói</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">🛤️ Jornada do Herói</h3>
         <p>A Jornada do Herói envolve um ciclo de transformação, onde você começa em um estado normal, enfrenta desafios e obstáculos, e no final, emerge mais forte, com novas habilidades e sabedoria.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Tom de Voz</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">🗣️ Tom de Voz</h3>
         <p>Além disso, é importante trabalhar o tom de voz: o modo como você se comunica com seu público. Seu tom de voz deve refletir sua personalidade e valores.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Criação do Seu Manifesto</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">📜 Criação do Seu Manifesto</h3>
         <p>Um manifesto de marca pessoal é a base que sustenta sua identidade profissional e sua presença no mercado. Ele define claramente sua missão, visão e princípios.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Missão, visão e crenças pessoais</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">🎯 Missão, visão e crenças pessoais</h3>
         <p>Estruturando sua identidade de marca.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">A importância do posicionamento</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">📍 A importância do posicionamento</h3>
         <p>Como definir sua proposta única de valor.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Conectando com o Público</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">🤝 Conectando com o Público</h3>
         <p>Ter uma identidade forte e um manifesto bem definido não é suficiente sem uma estratégia eficaz de conexão com o público.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Definição de público-alvo</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">👥 Definição de público-alvo</h3>
         <p>Quem você quer impactar e como identificar sua audiência.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Atividade Prática</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">✍️ Atividade Prática</h3>
         <p>Crie um quadro de autopercepção e uma declaração de marca pessoal para refletir sua identidade única.</p>
       </div>
     </div>
@@ -124,40 +171,40 @@
         <div class="inline-block bg-red-500 text-white text-sm font-bold px-6 py-2 rounded-full mb-4">AULA 02</div>
         <h2 class="text-5xl font-bold">Construindo sua Identidade Visual Impactante</h2>
       </div>
-      <div class="prose prose-invert max-w-none text-lg leading-relaxed">
-        <h3 class="text-3xl font-semibold mb-6">Design da Identidade Visual</h3>
+      <div class="prose max-w-none text-lg leading-relaxed">
+        <h3 class="text-3xl font-semibold mb-6">🎨 Design da Identidade Visual</h3>
         <p>Criar um logotipo pessoal é um processo criativo e estratégico que deve refletir sua identidade, valores e área de atuação. Aqui está um passo a passo simples para ajudá-lo a criar um logotipo impactante.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Defina sua Identidade</h3>
-        <ul>
-          <li>• Quem sou eu?</li>
-          <li>• Qual é a minha área de atuação?</li>
-          <li>• Quais são meus diferenciais?</li>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">🪪 Defina sua Identidade</h3>
+        <ul class="list-disc pl-6 mb-4">
+          <li>Quem sou eu?</li>
+          <li>Qual é a minha área de atuação?</li>
+          <li>Quais são meus diferenciais?</li>
         </ul>
         <p>Essas perguntas podem te ajudar a entender qual é a sua identidade e qual impressão você quer passar para o seu cliente.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Escolha de Cores</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">🌈 Escolha de Cores</h3>
         <p>A psicologia das cores é primordial já que as cores influenciam diretamente as percepções e emoções do público. Elas têm o poder de transmitir mensagens sutis, como confiança, energia, tranquilidade ou urgência, sem que seja necessário o uso de palavras.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Tipografia</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">🔤 Tipografia</h3>
         <p>A tipografia é essencial para transmitir a personalidade e o tom da marca, evocando sensações como sofisticação, modernidade, confiança ou diversão, conforme o estilo escolhido.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Crie Esboços</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">✏️ Crie Esboços</h3>
         <p>Utilize ferramentas de design gráfico como Adobe Illustrator ou Canva para esboçar seu logotipo.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Portfólio Visual</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">📂 Portfólio Visual</h3>
         <p>O portfólio visual é fundamental para profissionais das áreas de design, fotografia, cinema e marketing. Ele funciona como um cartão de visita.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Objetivo do Portfólio Visual</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">🎯 Objetivo do Portfólio Visual</h3>
         <p>O objetivo do portfólio é destacar suas melhores habilidades e projetos, criando uma narrativa visual da sua trajetória profissional.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Design e Apresentação</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">📐 Design e Apresentação</h3>
         <p>O design do seu portfólio deve ser simples e organizado, com um layout clean.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Coerência Visual</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">🔄 Coerência Visual</h3>
         <p>A coerência visual é a consistência dos elementos visuais em todos os materiais de marca.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Atividade Prática</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">✍️ Atividade Prática</h3>
         <p>Início de um mini-projeto.</p>
       </div>
     </div>
@@ -168,27 +215,27 @@
         <div class="inline-block bg-red-500 text-white text-sm font-bold px-6 py-2 rounded-full mb-4">AULA 03</div>
         <h2 class="text-5xl font-bold">Estratégias de Conteúdo e Presença Online</h2>
       </div>
-      <div class="prose prose-invert max-w-none text-lg leading-relaxed">
-        <h3 class="text-3xl font-semibold mb-6">O Poder do Conteúdo</h3>
+      <div class="prose max-w-none text-lg leading-relaxed">
+        <h3 class="text-3xl font-semibold mb-6">📱 O Poder do Conteúdo</h3>
         <p>Na era digital, ter uma presença forte nas redes sociais não é apenas um diferencial – é uma necessidade. Seja você um criador de conteúdo, um profissional autônomo ou um empreendedor, o conteúdo que você publica define como o público percebe você.</p>
         <p>O conteúdo certo atrai, engaja e fideliza seu público. As pessoas querem se conectar com histórias autênticas e informações úteis, e isso fortalece a sua credibilidade e influência.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Por que criar conteúdo relevante e autêntico?</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">⭐ Por que criar conteúdo relevante e autêntico?</h3>
         <p>No ambiente digital, somos bombardeados com informações a todo momento. Para se destacar, não basta apenas postar qualquer coisa, é preciso criar conteúdos que sejam úteis, envolventes e verdadeiros.</p>
         <p>Um conteúdo relevante é aquele que resolve um problema, responde a uma dúvida ou desperta interesse no seu público. Ele deve agregar valor e fazer com que as pessoas sintam que valeu a pena dedicar tempo para consumi-lo.</p>
         <p>Ser autêntico significa que seu conteúdo reflete quem você realmente é, sem tentar copiar ou forçar um estilo que não combina com você. Pessoas se conectam com histórias reais e com criadores que demonstram vulnerabilidade, experiências pessoais e opiniões genuínas.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Identidade e Propósito</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">🧬 Identidade e Propósito</h3>
         <p>Antes de criar qualquer conteúdo, é essencial definir quem você é e como quer ser percebido.</p>
         <p>Qual a sua mensagem central? Defina, também, qual o perfil você irá adotar a partir dos conteúdos que você irá gerar, por exemplo: Profissional (ideal para conteúdos técnicos e informativos) ou Inspirador (ótimo para quem quer motivar e transformar).</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Storytelling para se conectar</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">📖 Storytelling para se conectar</h3>
         <p>Todo mundo tem uma história única. Compartilhe como você começou, os desafios que enfrentou e as conquistas que teve.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Planejamento da Presença Online</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">🌐 Planejamento da Presença Online</h3>
         <p>Instagram • Facebook • WhatsApp • LinkedIn • TikTok • YouTube • X</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Atividade Prática</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">✍️ Atividade Prática</h3>
         <p>Elabore um plano de conteúdo para suas redes sociais.</p>
       </div>
     </div>
@@ -199,31 +246,31 @@
         <div class="inline-block bg-red-500 text-white text-sm font-bold px-6 py-2 rounded-full mb-4">AULA 04</div>
         <h2 class="text-5xl font-bold">Networking e Gestão da Reputação</h2>
       </div>
-      <div class="prose prose-invert max-w-none text-lg leading-relaxed">
-        <h3 class="text-3xl font-semibold mb-6">Construindo relações valiosas</h3>
+      <div class="prose max-w-none text-lg leading-relaxed">
+        <h3 class="text-3xl font-semibold mb-6">🤝 Construindo relações valiosas</h3>
         <p>Um dos passos mais importantes na jornada de construção do seu branding pessoal é o momento no qual selecionamos as pessoas que vão fazer parte da nossa rede de contatos.</p>
         <p>Essa tomada de decisão deve ser feita de forma estratégica para garantir que os laços criados sejam benéficos para ambas as partes e que os objetivos sejam alcançados de forma consistente.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">O famoso Networking</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">🌐 O famoso Networking</h3>
         <p>Networking é construir uma rede de contatos profissional para trocar experiências e informações e potencializar oportunidades através de relacionamentos.</p>
         <p><strong>E QUAL É A SUA FINALIDADE?</strong> Proporcionar relacionamentos de colaboração recíproca entre profissionais. Seja para fortalecer as amizades, estreitar negociações comerciais ou para aproveitar oportunidades no mercado de trabalho.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">E COMO CRIAR UMA REDE DE CONTATOS SÓLIDA?</h3>
-        <ul>
-          <li>• Identifique suas metas de networking: O que você busca alcançar com suas conexões?</li>
-          <li>• Pesquise pessoas chave em sua área: Quem pode agregar valor à sua jornada?</li>
-          <li>• Construa relacionamentos genuínos: Não se concentre só no que você pode ganhar, mas no que pode oferecer.</li>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">🔗 E COMO CRIAR UMA REDE DE CONTATOS SÓLIDA?</h3>
+        <ul class="list-disc pl-6 mb-4">
+          <li>Identifique suas metas de networking: O que você busca alcançar com suas conexões?</li>
+          <li>Pesquise pessoas chave em sua área: Quem pode agregar valor à sua jornada?</li>
+          <li>Construa relacionamentos genuínos: Não se concentre só no que você pode ganhar, mas no que pode oferecer.</li>
         </ul>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Técnicas para nutrir relacionamento</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">💡 Técnicas para nutrir relacionamento</h3>
         <p>Nutrir relacionamentos significa cultivar o vínculo de forma constante e genuína, sem parecer forçado ou interessado apenas em benefícios pessoais.</p>
         <p><strong>Mantenha o Contato de Forma Estratégica:</strong> Não basta adicionar alguém à sua lista de contatos e esperar que a relação floresça por si só.</p>
         <p><strong>Ofereça Valor Antes de Pedir Algo em Troca:</strong> Uma das maiores falhas no networking é procurar algo de imediato. Ao invés disso, comece oferecendo algo de valor primeiro, como uma ideia.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Gestão de Imagem e Reputação Online</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">🛡️ Gestão de Imagem e Reputação Online</h3>
         <p>Como melhoro minha reputação on-line? Produza conteúdo positivo, utilize feedbacks e prepare-se para crises.</p>
 
-        <h3 class="text-3xl font-semibold mt-12 mb-6">Atividade Prática</h3>
+        <h3 class="text-3xl font-semibold mt-12 mb-6">✍️ Atividade Prática</h3>
         <p>Defina 3 pessoas com quem você gostaria de se conectar e o valor que poderia agregar para elas.</p>
       </div>
     </div>
@@ -233,9 +280,11 @@
   <script>
     function showPage(n) {
       document.querySelectorAll('.page').forEach(p => p.classList.add('hidden'));
-      document.getElementById('page' + n).classList.remove('hidden');
+      const page = document.getElementById('page' + n);
+      if (page) page.classList.remove('hidden');
       document.querySelectorAll('nav button').forEach(b => b.classList.remove('nav-active'));
-      document.getElementById('btn' + n).classList.add('nav-active');
+      const btn = document.getElementById('btn' + n);
+      if (btn) btn.classList.add('nav-active');
     }
     window.onload = () => showPage(1);
   </script>
